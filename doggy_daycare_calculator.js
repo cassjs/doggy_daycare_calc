@@ -1,3 +1,16 @@
+// File Name: index.html
+// Date: 10/30/2020
+// Author: Jessica Cassidy
+
+// Description: The Doggy Daycare Calculator calculates the number of dogs and hours entered by a user. 
+// The hours correspond to the Hours Rate Type: hourly, half day, and full day rates.
+
+// | Length                                       | Rate           | Additional Dog |  
+// | -------------------------------------------- | ---------------| ---------------|
+// | Hourly (Max 2 hours)                         | $ 7.00/Hr      | N/A            |
+// | Half Day (Over 2 hrs - up to 5 hours max)    | $ 20.00        | $ 15.00        |
+// | Full Day (Over 5 hours - up to 11 hours max) | $ 30.00        | $ 25.00        |
+
 function calcRate() {
 var rateResult = 0.00;
 var numDogs = 0;
