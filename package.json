@@ -1,0 +1,23 @@
+{
+  "name": "doggy_daycare_calc",
+  "version": "1.0.0",
+  "description": "**Author:**     Jessica Cassidy\\ **Date:**       December 5, 2020",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cassjsdev/doggy_daycare_calc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cassjsdev/doggy_daycare_calc/issues"
+  },
+  "homepage": "https://github.com/cassjsdev/doggy_daycare_calc#readme",
+  "dependencies": {
+    "tailwindcss": "^2.0.3"
+  }
+}
