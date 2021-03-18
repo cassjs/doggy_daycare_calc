@@ -1,16 +1,3 @@
-// File Name: index.html
-// Date: 10/30/2020
-// Author: Jessica Cassidy
-
-// Description: The Doggy Daycare Calculator calculates the number of dogs and hours entered by a user. 
-// The hours correspond to the Hours Rate Type: hourly, half day, and full day rates.
-
-// | Length                                       | Rate           | Additional Dog |  
-// | -------------------------------------------- | ---------------| ---------------|
-// | Hourly (Max 2 hours)                         | $ 7.00/Hr      | N/A            |
-// | Half Day (Over 2 hrs - up to 5 hours max)    | $ 20.00        | $ 15.00        |
-// | Full Day (Over 5 hours - up to 11 hours max) | $ 30.00        | $ 25.00        |
-
 function calcRate() {
 var rateResult = 0.00;
 var numDogs = 0;
@@ -19,7 +6,7 @@ var numDogs = parseInt('Enter number of dogs: ');
 var numDogs = document.getElementById("inputDogs").value;
 var numHours = parseFloat('Enter number of hours at daycare needed: ');
 var numHours = document.getElementById("inputHours").value;
-//Comparisons Start, then call/invoke Rate
+// Comparisons Start, then call/invoke Rate
     if (numHours <= 2) {                                   //hourly
         return hourlyRate(numHours, numDogs) 
     } else if (numHours >=1 && numHours <= 5) {            //Half Day Rate 
@@ -31,13 +18,13 @@ var numHours = document.getElementById("inputHours").value;
     }
 };
 
-//Returns Hourly Rate
+// Returns Hourly Rate
 function hourlyRate(numHours, numDogs) {
     var hourlyRate = parseFloat(numHours * numDogs * 7);
     let showResult1 = document.getElementById("showResult").innerHTML = parseFloat(hourlyRate).toFixed(2);
 };
 
-//Returns Half Day Rate
+// Returns Half Day Rate
 function halfDayRate(numDogs) {
   if (numDogs == 1) {
         var halfDayRate1 = '20.00'
@@ -59,7 +46,7 @@ function fullDayRate(numDogs) {
     }
 };
 
-//Returns Exceeded Hours if over 11 hours max
+// Returns Exceeded Hours if over 11 hours max
 function exceededHours(numHours) {
     var exceededHours = (numHours + ' hours exceeded the number of daycare hours available. 11 hours is the max daycare hours available. Try again.')
     let showResult6 = document.getElementById("showResult").innerHTML = exceededHours;
