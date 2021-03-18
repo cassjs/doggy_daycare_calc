@@ -5,60 +5,57 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Doggy Daycare Calculator</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script src="doggy_daycare_calculator.js">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="index.js">
       window.onload= function(){
-          
       }
     </script>
 </head>
-<body>
-  <div>
-    <h1>Doggy Daycare Calculator</h1>
-    <div>
+<body class="container mx-auto justify-center bg-yellow-200 sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-2xl">
+  <!-- Main Container -->
+  <div class="max-w-3xl mt-10 ml-4 mr-4 p-8 bg-white bg-opacity-80 border-4 border-blue-400">
+    <div class="pb-4">
+      <h1 class="text-center m-4 font-bold text-blue-400 sm:text-xl md:text-2xl lg:text-3xl">Doggy Daycare Calculator</h1>
       <!-- Rate Table -->
-      <h2>Rates:</h2>
       <table>
         <tr>
-          <th>Length</th>
-          <th>Rate</th> 
-          <th>Additional Dog</th>
+          <th class="w-1/2 sm:text-sm md:text-md lg:text-lg">Rate Time</th>
+          <th class="w-1/4 sm:text-sm md:text-md lg:text-lg">Price</th> 
+          <th class="w-1/4 sm:text-sm md:text-md lg:text-lg">Additional Dog</th>
         </tr>
         <tr>
-          <td>Hourly (Max 2 hours)</td>
-          <td>$7.00/Hr</td>
-          <td>N/A</td>
+          <td class="sm:text-sm md:text-md lg:text-lg">Hourly <br><span class="uppercase text-xs">(2 hrs Max)</span></td>
+          <td class="sm:text-sm md:text-md lg:text-lg">$7.00/Hr</td>
+          <td class="sm:text-sm md:text-md lg:text-lg">-</td>
         </tr>
         <tr>
-          <td>Half Day (Over 2 hrs - up to 5 hours max)</td>
-          <td>$20.00</td>
-          <td>$15.00</td>
+          <td class="sm:text-sm md:text-md lg:text-lg">Half Day <br><span class="uppercase text-xs">(2+ hrs - 5 hrs max)</span></td>
+          <td class="sm:text-sm md:text-md lg:text-lg">$20.00</td>
+          <td class="sm:text-sm md:text-md lg:text-lg">$15.00</td>
         </tr>
         <tr>
-          <td>Full Day (Over 5 hours - up to 11 hours max)</td>
-          <td>$30.00</td>
-          <td>$25.00</td>
+          <td class="sm:text-sm md:text-md lg:text-lg">Full Day <br><span class="uppercase text-xs">(5+ hrs - 11 hrs max)</span></td>
+          <td class="sm:text-sm md:text-md lg:text-lg">$30.00</td>
+          <td class="sm:text-sm md:text-md lg:text-lg">$25.00</td>
         </tr>
       </table>
     </div>
     <div>
       <!-- Input - Dogs -->
-      Enter Number of Dogs:  <input type="text" id="inputDogs">
-      <br>
+      <p class="mt-4 sm:text-sm md:text-md lg:text-lg">Number of Dogs :  <input type="text" id="inputDogs" class="border-2 border-blue-400"></p>
       <!-- Input 2 - Hours -->
-      Enter Number of Hours: <input type="text"  id="inputHours">
-      <br>
-      <!-- Button Calculate Rate -->     
-      <button id="calcBttn" onclick="calcRate()"> Calculate Rate </button>
-      <br>
-      <b>Rate Total: $ </b><br>
-    </div>
-    <div>
-      <!-- Rate Result -->
-      <span id="showResult"></span>
+      <p class="mt-4 sm:text-sm md:text-md lg:text-lg">Number of Hours: <input type="text" id="inputHours" class="border-2 border-blue-400"></p>
+      <!-- Button Calculate Rate -->
+      <button id="calcBttn" class="mt-4 bg-blue-400 text-sm text-white font-semibold hover:text-green-400 py-1 px-1 border border-blue-400 hover:border-green-400 rounded" onclick="calcRate()">
+        Calculate
+      </button>     
+      <!-- <button id="calcBttn" onclick="calcRate()"> Calculate Rate </button> -->
+      <div class="mt-4 sm:text-sm md:text-md lg:text-lg">
+        Rate Total: $
+        <!-- Rate Result -->
+        <span id="showResult"></span>
+      </div>
     </div>
   </div>
-
-
 </body>
 </html>
