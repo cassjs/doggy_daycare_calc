@@ -18,7 +18,6 @@ Tailwind CSS
 ![](public/images/screenshot_program-output1.png)
 ![](public/images/screenshot_program-output2.png)
 
-
 ## Test Cases:
 System tests using black-box testing of all functions of the program. Valid and invalid inputs are tested.
 
