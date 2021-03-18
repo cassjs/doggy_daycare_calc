@@ -11,12 +11,11 @@ A doggy daycare calculator that calculates total rates based on number of dogs a
 | Full Day (5+ hrs - 11 hrs max)   | $ 30.00     | $ 25.00        |
 
 ## Built With:
-JavaScript\
-Tailwind CSS
+- JavaScript
+- Tailwind CSS
 
 ## Preview:
-![](public/images/screenshot_program-output1.png)
-![](public/images/screenshot_program-output2.png)
+![](public/images/screenshot_program-output.png)
 
 ## Test Cases:
 System tests using black-box testing of all functions of the program. Valid and invalid inputs are tested.
