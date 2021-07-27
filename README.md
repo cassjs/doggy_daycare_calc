@@ -8,7 +8,7 @@ A doggy daycare calculator that calculates total rates based on number of dogs a
 | Half Day (2+ hrs - 5 hrs max)    | $ 20.00     | $ 15.00        |
 | Full Day (5+ hrs - 11 hrs max)   | $ 30.00     | $ 25.00        |
 
-(Python Version: https://github.com/cassjsdev/python_projects/blob/master/doggy_daycare_calculator/README.md)
+[See Python Version](https://github.com/cassjsdev/python_projects/blob/master/doggy_daycare_calculator/README.md)
 
 ## Build:
 - **Language:** JavaScript
@@ -20,12 +20,14 @@ A doggy daycare calculator that calculates total rates based on number of dogs a
 ## Features:
 - Areas to input user values
 - Calculated output result shows via click of a button 
-
-## Preview:
-![](public/images/screenshot_program-output.png)
+- Responsive styling viewable on mobile or desktop devices
+- Build bash script automates build in development and opens port for live editing
+- Deployed via Netlify w/ continuous deployment via Github repo
 
 ## Test Cases:
 System tests using black-box testing of all functions of the program. Valid and invalid inputs are tested.
 
 ![](public/images/screenshot_program-test-cases-pg1.png)\
 
+## Preview:
+![](public/images/screenshot_program-output.png)
