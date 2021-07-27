@@ -10,24 +10,24 @@ A doggy daycare calculator that calculates total rates based on number of dogs a
 
 [See Python Version](https://github.com/cassjsdev/python_projects/blob/master/doggy_daycare_calculator/README.md)
 
-## Build:
+## Build
 - **Language:** JavaScript
 - **Styling:** Tailwind-CSS
 - **Deployment:** Netlify (Continuously deployed)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8ed2edb6-fae7-40bc-a272-d9733be176ea/deploy-status)](https://app.netlify.com/sites/cassjs-doggydaycarecalc/deploys)
 
-## Features:
+## Features
 - Areas to input user values
 - Calculated output result shows via click of a button 
 - Responsive styling viewable on mobile or desktop devices
 - Build bash script automates build in development and opens port for live editing
 - Deployed via Netlify w/ continuous deployment via Github repo
 
-## Test Cases:
+## Test Cases
 System tests using black-box testing of all functions of the program. Valid and invalid inputs are tested.
 
 ![](public/images/screenshot_program-test-cases-pg1.png)\
 
-## Preview:
+## Preview
 ![](public/images/screenshot_program-output.png)
